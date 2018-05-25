@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Demos\Scripts\RandomMatchmaker.cs" />
      <Compile Include="Assets\Impoted Assets\Photon Unity Networking\Plugins\PhotonNetwork\CustomTypes.cs" />
      <Compile Include="Assets\Impoted Assets\Photon Unity Networking\Plugins\PhotonNetwork\Enums.cs" />
      <Compile Include="Assets\Impoted Assets\Photon Unity Networking\Plugins\PhotonNetwork\Extensions.cs" />
