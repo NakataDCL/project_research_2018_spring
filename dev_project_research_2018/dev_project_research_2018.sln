@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dev_project_research_2018", "Assembly-CSharp-firstpass.csproj", "{48D66BFE-B06C-6123-8BBF-122951FD9066}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dev_project_research_2018", "Assembly-CSharp.csproj", "{BF90204A-FC81-ED5D-E4F4-F8281E78698C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dev_project_research_2018", "Assembly-CSharp-Editor.csproj", "{E3D4787D-E51A-C333-9EBF-7ED871754CFD}"
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{48D66BFE-B06C-6123-8BBF-122951FD9066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{48D66BFE-B06C-6123-8BBF-122951FD9066}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{48D66BFE-B06C-6123-8BBF-122951FD9066}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{48D66BFE-B06C-6123-8BBF-122951FD9066}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BF90204A-FC81-ED5D-E4F4-F8281E78698C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BF90204A-FC81-ED5D-E4F4-F8281E78698C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF90204A-FC81-ED5D-E4F4-F8281E78698C}.Release|Any CPU.ActiveCfg = Release|Any CPU
