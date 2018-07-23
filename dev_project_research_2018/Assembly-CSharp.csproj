@@ -51,8 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Demos\Scripts\ObjectGenerator.cs" />
-     <Compile Include="Assets\Demos\Scripts\RandomMatchmaker.cs" />
      <Compile Include="Assets\Impoted Assets\Photon Unity Networking\Plugins\PhotonNetwork\CustomTypes.cs" />
      <Compile Include="Assets\Impoted Assets\Photon Unity Networking\Plugins\PhotonNetwork\Enums.cs" />
      <Compile Include="Assets\Impoted Assets\Photon Unity Networking\Plugins\PhotonNetwork\Extensions.cs" />
@@ -191,6 +189,9 @@
      <Compile Include="Assets\Impoted Assets\PUNVoice\TestVoice\HighlightSpeaker.cs" />
      <Compile Include="Assets\Impoted Assets\PUNVoice\TestVoice\ToneAudioReader.cs" />
      <Compile Include="Assets\Impoted Assets\PUNVoice\TestVoice\ViewDrag.cs" />
+     <Compile Include="Assets\Projects\FaceAPI\Scripts\FaceAPITest.cs" />
+     <Compile Include="Assets\Projects\Photon\Scripts\ObjectGenerator.cs" />
+     <Compile Include="Assets\Projects\Photon\Scripts\RandomMatchmaker.cs" />
      <None Include="Assets\Impoted Assets\Photon Unity Networking\link.xml" />
      <None Include="Assets\Impoted Assets\PUNVoice\DemoVoice\Fonts\Orbitron Black.txt" />
      <None Include="Assets\Impoted Assets\PUNVoice\readme.txt" />
