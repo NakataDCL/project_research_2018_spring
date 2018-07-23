@@ -189,6 +189,7 @@
      <Compile Include="Assets\Impoted Assets\PUNVoice\TestVoice\HighlightSpeaker.cs" />
      <Compile Include="Assets\Impoted Assets\PUNVoice\TestVoice\ToneAudioReader.cs" />
      <Compile Include="Assets\Impoted Assets\PUNVoice\TestVoice\ViewDrag.cs" />
+     <Compile Include="Assets\Projects\FaceAPI\Scripts\FaceAPITest.cs" />
      <Compile Include="Assets\Projects\Photon\Scripts\ObjectGenerator.cs" />
      <Compile Include="Assets\Projects\Photon\Scripts\RandomMatchmaker.cs" />
      <None Include="Assets\Impoted Assets\Photon Unity Networking\link.xml" />
