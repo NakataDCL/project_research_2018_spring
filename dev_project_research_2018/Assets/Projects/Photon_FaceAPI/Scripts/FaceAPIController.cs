@@ -10,6 +10,8 @@ public class FaceAPIController : MonoBehaviour {
 
 	private UIController _UICon = null;
 	private WebCameraController _WebCamCon = null;
+
+	private PhotonController _PhCon = null;
 	private const uint _interval = 300; // Face APIの呼び出し間隔 [frame]
 
 	private uint _cooltime = 0;
@@ -24,6 +26,12 @@ public class FaceAPIController : MonoBehaviour {
 		_UICon = GameObject.Find("UIController").GetComponent<UIController>();
 		if(_UICon == null){
 			Debug.Log("Can't find UIController.");
+			return;
+		}
+
+		_PhCon = GameObject.Find("PhotonController").GetComponent<PhotonController>();
+		if(_PhCon == null){
+			Debug.Log("Can't find PhotonController.");
 			return;
 		}
 	}
@@ -67,7 +75,10 @@ public class FaceAPIController : MonoBehaviour {
 
 		// FaceAPIのレスポンスから表情のパラメータを取り出す
 		Dictionary<string, double> paramsDict  = parseFaceAPIResponse(www.text);
-		_UICon.updateUI(paramsDict);
+		//_UICon.updateUI(paramsDict);
+		
+		// 表情のパラメータを相手に送信する
+		_PhCon.SendFaceParamToOthers(paramsDict);
 	}
 
 	// FaceAPIのレスポンスから表情のパラメータを取り出す

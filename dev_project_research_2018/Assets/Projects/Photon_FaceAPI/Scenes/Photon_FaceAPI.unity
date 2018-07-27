@@ -265,6 +265,8 @@ GameObject:
   m_Component:
   - component: {fileID: 84709699}
   - component: {fileID: 84709698}
+  - component: {fileID: 84709700}
+  - component: {fileID: 84709701}
   m_Layer: 0
   m_Name: PhotonController
   m_TagString: Untagged
@@ -297,6 +299,44 @@ Transform:
   m_Father: {fileID: 676449773}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &84709700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 84709697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf8a59d1e87db41feb379e77427bcb8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &84709701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 84709697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ownerId: 0
+  group: 0
+  OwnerShipWasTransfered: 0
+  prefixBackup: -1
+  synchronization: 3
+  onSerializeTransformOption: 3
+  onSerializeRigidBodyOption: 2
+  ownershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 1668773400}
+  - {fileID: 1668773398}
+  ObservedComponentsFoldoutOpen: 1
+  viewIdField: 1
+  instantiationId: 1
+  currentMasterID: -1
+  isRuntimeInstantiated: 0
 --- !u!1 &344919247
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,7 +1185,8 @@ Prefab:
       propertyPath: instantiationId
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114165677491451596, guid: 669a8cf95a8424d57932094b74ff3868, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 669a8cf95a8424d57932094b74ff3868, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1668773393 stripped
@@ -1153,6 +1194,18 @@ GameObject:
   m_PrefabParentObject: {fileID: 1388440106057866, guid: 669a8cf95a8424d57932094b74ff3868,
     type: 2}
   m_PrefabInternal: {fileID: 1668773392}
+--- !u!114 &1668773398 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114203068624864690, guid: 669a8cf95a8424d57932094b74ff3868,
+    type: 2}
+  m_PrefabInternal: {fileID: 1668773392}
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+--- !u!114 &1668773400 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114704526710700508, guid: 669a8cf95a8424d57932094b74ff3868,
+    type: 2}
+  m_PrefabInternal: {fileID: 1668773392}
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
 --- !u!1 &1774911438
 GameObject:
   m_ObjectHideFlags: 0

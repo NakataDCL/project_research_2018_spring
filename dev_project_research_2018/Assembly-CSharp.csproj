@@ -197,6 +197,7 @@
      <Compile Include="Assets\Projects\Photon\Scripts\RandomMatchmaker.cs" />
      <Compile Include="Assets\Projects\Photon_FaceAPI\Scripts\FaceAPIController.cs" />
      <Compile Include="Assets\Projects\Photon_FaceAPI\Scripts\MiniJSON.cs" />
+     <Compile Include="Assets\Projects\Photon_FaceAPI\Scripts\PhotonController.cs" />
      <Compile Include="Assets\Projects\Photon_FaceAPI\Scripts\PhotonRandomMatchMaker.cs" />
      <Compile Include="Assets\Projects\Photon_FaceAPI\Scripts\UIController.cs" />
      <Compile Include="Assets\Projects\Photon_FaceAPI\Scripts\WebCameraController.cs" />
