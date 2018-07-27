@@ -39,8 +39,7 @@ public class FaceAPIController : MonoBehaviour {
 		}
 
 		if(_cooltime > 0){
-			_cooltime--;
-			if(_cooltime == 0){
+			if(--_cooltime == 0){
 				Debug.Log("You can call face API.");
 			}
 		}
@@ -66,8 +65,14 @@ public class FaceAPIController : MonoBehaviour {
 
 		yield return www;
 
-		Debug.Log(www.text);
-		var jsonResultArray = (IList) Json.Deserialize (www.text);
+		// FaceAPIのレスポンスから表情のパラメータを取り出す
+		Dictionary<string, double> paramsDict  = parseFaceAPIResponse(www.text);
+		_UICon.updateUI(paramsDict);
+	}
+
+	// FaceAPIのレスポンスから表情のパラメータを取り出す
+	public Dictionary<string, double> parseFaceAPIResponse(string json){
+		var jsonResultArray = (IList) Json.Deserialize (json);
 		var jsonResult = (IDictionary)jsonResultArray[0];
 		var jsonFaceAttributes = (IDictionary)jsonResult["faceAttributes"];
 		var jsonEmotion = (IDictionary)jsonFaceAttributes["emotion"];
@@ -81,6 +86,6 @@ public class FaceAPIController : MonoBehaviour {
 		paramsDict["sadness"] = (double)jsonEmotion["sadness"];
 		paramsDict["surprise"] = (double)jsonEmotion["surprise"];
 
-		_UICon.updateUI(paramsDict);
+		return paramsDict;
 	}
 }

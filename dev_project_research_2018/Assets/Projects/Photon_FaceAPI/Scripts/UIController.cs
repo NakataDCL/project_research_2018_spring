@@ -25,14 +25,14 @@ public class UIController : MonoBehaviour {
 
 	public void updateUI(Dictionary<string, double> paramsDict){
 		Debug.Log(paramsDict);
-		ui_anger.text = paramsDict["anger"].ToString();
-		ui_contempt.text = paramsDict["contempt"].ToString();
-		ui_disgust.text = paramsDict["disgust"].ToString();
-		ui_fear.text = paramsDict["fear"].ToString();
-		ui_happiness.text = paramsDict["happiness"].ToString();
-		ui_neutral.text = paramsDict["neutral"].ToString();
-		ui_sadness.text = paramsDict["sadness"].ToString();
-		ui_surprise.text = paramsDict["surprise"].ToString();
+		ui_anger.text     = "anger : " + paramsDict["anger"].ToString();
+		ui_contempt.text  = "contempt : " + paramsDict["contempt"].ToString();
+		ui_disgust.text   = "disgust : " + paramsDict["disgust"].ToString();
+		ui_fear.text      = "fear : " + paramsDict["fear"].ToString();
+		ui_happiness.text = "happiness : " + paramsDict["happiness"].ToString();
+		ui_neutral.text   = "neutral : " + paramsDict["neutral"].ToString();
+		ui_sadness.text   = "sadness : " + paramsDict["sadness"].ToString();
+		ui_surprise.text  = "surprise : " + paramsDict["surprise"].ToString();
 	}
 	
 }
