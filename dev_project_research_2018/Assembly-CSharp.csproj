@@ -195,9 +195,17 @@
      <Compile Include="Assets\Projects\FaceAPI_WebCam\Scripts\WebCameraManager.cs" />
      <Compile Include="Assets\Projects\Photon\Scripts\ObjectGenerator.cs" />
      <Compile Include="Assets\Projects\Photon\Scripts\RandomMatchmaker.cs" />
+     <Compile Include="Assets\Projects\Photon_FaceAPI\Scripts\FaceAPIController.cs" />
+     <Compile Include="Assets\Projects\Photon_FaceAPI\Scripts\MiniJSON.cs" />
+     <Compile Include="Assets\Projects\Photon_FaceAPI\Scripts\PhotonRandomMatchMaker.cs" />
+     <Compile Include="Assets\Projects\Photon_FaceAPI\Scripts\UIController.cs" />
+     <Compile Include="Assets\Projects\Photon_FaceAPI\Scripts\WebCameraController.cs" />
      <Compile Include="Assets\Projects\WebCamera\Scripts\WebCameraTest.cs" />
+     <None Include="Assets\Impoted Assets\Optimize SDKohaku-Chanz\Shader\Unitychan_chara_eye.shader" />
      <None Include="Assets\Impoted Assets\Photon Unity Networking\link.xml" />
      <None Include="Assets\Impoted Assets\PUNVoice\DemoVoice\Fonts\Orbitron Black.txt" />
+     <None Include="Assets\Impoted Assets\Optimize SDKohaku-Chanz\Readme_Optimize_SD Kohaku-Chanz.txt" />
+     <None Include="Assets\Impoted Assets\Optimize SDKohaku-Chanz\Shader\readme.txt" />
      <None Include="Assets\Impoted Assets\PUNVoice\readme.txt" />
      <None Include="Assets\Impoted Assets\Plugins\Photon3Unity3D.xml" />
      <None Include="Assets\Impoted Assets\PUNVoice\DemoVoice\Audio\Reminder-public_d-291_hifi.mp3.txt" />

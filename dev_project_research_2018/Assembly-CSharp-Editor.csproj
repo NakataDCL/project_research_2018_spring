@@ -70,8 +70,11 @@
      <Compile Include="Assets\Impoted Assets\Photon Unity Networking\UtilityScripts\PhotonPlayer\Editor\PunTeamsInspector.cs" />
      <Compile Include="Assets\Impoted Assets\PUNVoice\DemoVoice\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
      <Compile Include="Assets\Impoted Assets\PUNVoice\Editor\PhotonVoiceRecorderInspector.cs" />
+     <None Include="Assets\Impoted Assets\Optimize SDKohaku-Chanz\Shader\Unitychan_chara_eye.shader" />
      <None Include="Assets\Impoted Assets\Photon Unity Networking\link.xml" />
      <None Include="Assets\Impoted Assets\PUNVoice\DemoVoice\Fonts\Orbitron Black.txt" />
+     <None Include="Assets\Impoted Assets\Optimize SDKohaku-Chanz\Readme_Optimize_SD Kohaku-Chanz.txt" />
+     <None Include="Assets\Impoted Assets\Optimize SDKohaku-Chanz\Shader\readme.txt" />
      <None Include="Assets\Impoted Assets\PUNVoice\readme.txt" />
      <None Include="Assets\Impoted Assets\Plugins\Photon3Unity3D.xml" />
      <None Include="Assets\Impoted Assets\PUNVoice\DemoVoice\Audio\Reminder-public_d-291_hifi.mp3.txt" />
