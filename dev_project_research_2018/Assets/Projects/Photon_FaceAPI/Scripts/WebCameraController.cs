@@ -5,8 +5,8 @@ using UnityEngine.UI;
 using System.IO;
 
 public class WebCameraController : MonoBehaviour {
-	private int m_width = 1280;
-	private int m_height = 720;
+	private int m_width = 640;
+	private int m_height = 360;
 	private WebCamTexture m_webCamTexture = null;
 	Texture2D texture = null;
 	private Color32[] colors;
@@ -30,10 +30,6 @@ public class WebCameraController : MonoBehaviour {
 		// TODO: フレームレートの指定
         WebCamDevice userCameraDevice = WebCamTexture.devices[0];
         m_webCamTexture = new WebCamTexture( userCameraDevice.name, m_width, m_height );
-
-		// 画像をByte出力するための設定
-		colors = new Color32[m_width * m_height]; // カメラの解像度に合わせる必要がある(1280*720)
-        texture = new Texture2D (m_width, m_height, TextureFormat.RGBA32, false);
 		
 		// 撮影開始
 		m_webCamTexture.Play();
@@ -48,13 +44,20 @@ public class WebCameraController : MonoBehaviour {
 			return null;
 		}
 
-		// カメラの解像度に合わせる必要がある
+		// 画像をByte出力するための設定
+		int width =  m_webCamTexture.width;
+		int height = m_webCamTexture.height;
+
+		// カメラの解像度に合わせる必要がある(自分のは1280*720)
+		colors = new Color32[width * height];
+        texture = new Texture2D (width, height, TextureFormat.RGBA32, false);
+		
 		m_webCamTexture.GetPixels32(colors);
 
-		for (int x = 0; x < m_width; x++) {
-        	for (int y = 0; y < m_height; y++) {
-				Color c = colors [x + y * m_width];
-				colors [x + y * m_width] = colors [x + y * m_width];
+		for (int x = 0; x < width; x++) {
+        	for (int y = 0; y < height; y++) {
+				Color c = colors [x + y * width];
+				colors [x + y * width] = colors [x + y * width];
 			}
 		}
 
