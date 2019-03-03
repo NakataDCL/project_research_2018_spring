@@ -262,9 +262,9 @@ PlayerSettings:
   enableInternalProfiler: 0
   logObjCUncaughtExceptions: 1
   enableCrashReportAPI: 0
-  cameraUsageDescription: 
+  cameraUsageDescription: This app uses Camera
   locationUsageDescription: 
-  microphoneUsageDescription: 
+  microphoneUsageDescription: This app uses Microphone
   switchNetLibKey: 
   switchSocketMemoryPoolSize: 6144
   switchSocketAllocatorPoolSize: 128

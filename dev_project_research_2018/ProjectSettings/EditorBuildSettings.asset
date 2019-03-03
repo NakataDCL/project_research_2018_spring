@@ -6,5 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Demos/Demos.unity
+    path: Assets/Projects/Photon_FaceAPI/Scenes/Photon_FaceAPI.unity
+    guid: d634a3746cad848fb81d7974ba928d37
+  - enabled: 0
+    path: Assets/Projects/Photon/Scenes/PhotonVoiceDemo.unity
     guid: 1b8e9c5d5b4fc47ed8e16e0ff1c11229
