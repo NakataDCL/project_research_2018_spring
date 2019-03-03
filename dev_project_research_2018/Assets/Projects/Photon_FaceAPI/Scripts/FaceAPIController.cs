@@ -75,7 +75,7 @@ public class FaceAPIController : MonoBehaviour {
 
 		// FaceAPIのレスポンスから表情のパラメータを取り出す
 		Dictionary<string, double> paramsDict  = parseFaceAPIResponse(www.text);
-		//_UICon.updateUI(paramsDict);
+		_UICon.updateUI(paramsDict);
 		
 		// 表情のパラメータを相手に送信する
 		_PhCon.SendFaceParamToOthers(paramsDict);
@@ -83,6 +83,8 @@ public class FaceAPIController : MonoBehaviour {
 
 	// FaceAPIのレスポンスから表情のパラメータを取り出す
 	public Dictionary<string, double> parseFaceAPIResponse(string json){
+		Debug.Log("perse: " + json);
+
 		var jsonResultArray = (IList) Json.Deserialize (json);
 		var jsonResult = (IDictionary)jsonResultArray[0];
 		var jsonFaceAttributes = (IDictionary)jsonResult["faceAttributes"];

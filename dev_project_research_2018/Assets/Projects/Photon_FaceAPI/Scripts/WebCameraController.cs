@@ -11,10 +11,18 @@ public class WebCameraController : MonoBehaviour {
 	Texture2D texture = null;
 	private Color32[] colors;
 
+	// for debug
+	public RawImage m_displayUI = null;
+	public Text error = null;
+
 	private IEnumerator Start () {
 		// 接続されているカメラを探す
-		if(WebCamTexture.devices.Length == 0){
+		WebCamDevice[] devices = WebCamTexture.devices;
+		//error.text =  error.text.ToString() + "devices : " + devices.Length.ToString();
+
+		if(devices.Length == 0){
 			Debug.LogFormat("カメラが見つかりません");
+			error.text = error.text.ToString()  + "カメラが見つかりません\n";
 			yield break;
 		}
 
@@ -23,13 +31,23 @@ public class WebCameraController : MonoBehaviour {
 		if( !Application.HasUserAuthorization( UserAuthorization.WebCam ) )
 		{
 			Debug.LogFormat( "カメラの使用が許可されていません。" );
+			error.text = error.text.ToString()  + "カメラの使用が許可されていません\n";
 			yield break;
 		}
 
-		// 最初に取得されたデバイスを使ってテクスチャを作る。
-		// TODO: フレームレートの指定
-        WebCamDevice userCameraDevice = WebCamTexture.devices[0];
-        m_webCamTexture = new WebCamTexture( userCameraDevice.name, m_width, m_height );
+		if (devices.Length == 1){
+			// 最初に取得されたデバイスを使ってテクスチャを作る。
+			// TODO: フレームレートの指定
+			WebCamDevice userCameraDevice = WebCamTexture.devices[0];
+			m_webCamTexture = new WebCamTexture( userCameraDevice.name, m_width, m_height );
+			//m_webCamTexture = null; // for debug
+		}else{
+			error.text = error.text.ToString() + "Camera Name :" + devices[1].name + "\n";
+			WebCamDevice userCameraDevice = WebCamTexture.devices[1];
+			m_webCamTexture = new WebCamTexture( userCameraDevice.name, m_width, m_height );
+		}
+
+		//m_displayUI.texture = m_webCamTexture;
 		
 		// 撮影開始
 		m_webCamTexture.Play();
